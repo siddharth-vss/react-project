@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.pjlist{
+  text-decoration: none;
+  font-weight: bolder;
+  color: hsl(271, 76%, 53%);
+}
+
+.pjlist:hover{
+  cursor: pointer !important;
+}
+
+.list{
+
+  background-color: hsl(271, 76%, 94%);
+  width: 100vw;
+  height: 100vh;
+}

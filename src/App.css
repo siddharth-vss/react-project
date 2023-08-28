@@ -1,38 +1,92 @@
+
+
+
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffff00;
+  /* cursor: none  !important; */
 }
 
-.App-logo {
-  height: 40vmin;
+.title {
+  font-size: 10rem;
+}
+
+.cursor {
+  background-color: #111;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.avengers{
+  background-color: black;
   color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.bts{
+  background-color: blueviolet;
+  color: hsl(271, 76%, 94%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bts:hover{
+  background-color: blueviolet;
+  color: hsl(271, 76%, 94%);
+}
+
+
+
+
+.SPIDER-MAN:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/5773/32/2spiderman--128.png), default !important
+}
+.IRON-MAN:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Iron_Man_Pointer.png), default !important
+}
+.IRON-MAN-2:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Tony_Stark_Pointer.png), default !important
+}
+.IRON-MAN-3:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Iron_Man_Endgame_HelmetCursor.png), default !important
+}
+.STAN:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/pointer/32/_Stan_Lee_Pointer.png), default !important
+}
+.HULK:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/5781/32/hulk-128.png), default !important
+}
+.NICK:hover{
+  cursor:url(	https://cdn.custom-cursor.com/db/7225/32/marvel-comics-nick-fury-and-rocket-launcher-pointer.png), default !important
+}
+.HAWKEYE:hover{
+  cursor:url(	https://cdn.custom-cursor.com/db/pointer/32/hawkeye_bow_pointer.png), default !important
+}
+.CAPTAIN:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Cap_America_Cursor.png), default !important
+}
+.THOR:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Thor_Mjolnir.png), default !important
+}
+.LOKI:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Loki_Pointer.png), default !important
+}
+.VISION:hover{
+  cursor:url(	https://cdn.custom-cursor.com/db/7487/32/marvel-comics-vision-pointer.png), default !important
+}
+.DEADPOOL:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Deadpool_Cursor.png), default !important
+}
+.Cap:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/5545/32/fortnite-captain-america-and-proto-adamantium-shield-pointer.png), default !important
+}
+.Thor:hover{
+  cursor:url(https://cdn.custom-cursor.com/db/6395/32/marvel-comics-thor-ragnarok-chris-hemsworth-pointer.png), default !important
 }
