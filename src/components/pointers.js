@@ -6,47 +6,48 @@ const Pointers = () => {
         <>
 
             <div className='avengers'  >
-                <h1 className='text-center' >Avengers Craft</h1>
+                <img  src="https://www.freepnglogos.com/uploads/avengers-png-logo/avengers-logo-png-transparent-avengers-logo-images-7.png" alt="avengers" className=' sp' />
+                <h1 className='text-center' ><span>Avengers Craft</span></h1>
 
                 <br /><br />
 
                 <main className="d-flex flex-column justify-content-center">
 
-                    <div className="d-flex justify-content-between my-5">
+                    <div className="d-flex  flex-column justify-content-between ">
 
-                        <b className="btn SPIDER-MAN bts mx-5" >SPIDER-MAN</b>
-                        <b className="btn IRON-MAN bts mx-5" >IRON-MAN</b>
-                        <b className="btn IRON-MAN-2 bts mx-5" >IRON-MAN-2</b>
-
-
-                        <b className="btn IRON-MAN-3 bts mx-5" >IRON-MAN-3</b>
-                        <b className="btn STAN bts mx-5" >STAN LEE</b>
+                        <b className="btn SPIDER-MAN bts my-3" >SPIDER-MAN</b>
+                        <b className="btn IRON-MAN bts my-3" >IRON-MAN</b>
+                        <b className="btn IRON-MAN-2 bts my-3" >IRON-MAN-2</b>
 
 
-                    </div>
-                    <div className="d-flex justify-content-between my-5">
-
-                        <b className="btn HULK bts mx-5" >HULK</b>
-
-
-                        <b className="btn NICK bts mx-5" >NICK F.</b>
-                        <b className="btn HAWKEYE bts mx-5" >HAWKEYE</b>
-                        <b className="btn CAPTAIN bts mx-5" >CAPTAIN</b>
-                        <b className="btn THOR bts mx-5" >THOR</b>
-
-
+                        <b className="btn IRON-MAN-3 bts my-3" >IRON-MAN-3</b>
+                        <b className="btn STAN bts my-3" >STAN LEE</b>
 
 
                     </div>
-                    <div className="d-flex justify-content-between my-5">
+                    <div className="d-flex  flex-column justify-content-between ">
 
-                        <b className="btn LOKI bts mx-5" >LOKI</b>
-                        <b className="btn VISION bts mx-5" >VISION</b>
-                        <b className="btn DEADPOOL bts mx-5" >DEADPOOL</b>
+                        <b className="btn HULK bts my-3" >HULK</b>
 
 
-                        <b className="btn Cap bts mx-5" >3d Cap.</b>
-                        <b className="btn Thor bts mx-5" >3d Thor</b>
+                        <b className="btn NICK bts my-3" >NICK F.</b>
+                        <b className="btn HAWKEYE bts my-3" >HAWKEYE</b>
+                        <b className="btn CAPTAIN bts my-3" >CAPTAIN</b>
+                        <b className="btn THOR bts my-3" >THOR</b>
+
+
+
+
+                    </div>
+                    <div className="d-flex  flex-column justify-content-between ">
+
+                        <b className="btn LOKI bts my-3" >LOKI</b>
+                        <b className="btn VISION bts my-3" >VISION</b>
+                        <b className="btn DEADPOOL bts my-3" >DEADPOOL</b>
+
+
+                        <b className="btn Cap bts my-3" >3d Cap.</b>
+                        <b className="btn Thor bts my-3" >3d Thor</b>
 
 
 

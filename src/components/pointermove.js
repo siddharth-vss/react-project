@@ -27,8 +27,8 @@ function Pointer() {
 
   const variants = {
     default: {
-      x: mousePosition.x ,
-      y: mousePosition.y ,
+      x: mousePosition.x -15,
+      y: mousePosition.y -15,
     },
     text: {
       height: 150,
@@ -57,3 +57,9 @@ function Pointer() {
 }
 
 export default Pointer;
+
+
+
+
+
+

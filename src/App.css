@@ -1,4 +1,42 @@
 
+.data{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width :100%;
+}
+
+h1 span{
+  color: #ffff00;
+  text-decoration:dashed;
+}
+
+.sp{
+  height: 100px;
+  left: 50% !important;
+ right: auto;
+  width: 268px;
+}
+.sidebar{
+  height: 100%;
+}
+
+.spa{
+ display:flex;
+ 
+}
+.card-img{
+  width: 200px;
+  height: 300px;
+  margin-left: 12px;
+  margin-top: 12px;
+  
+}
+.card:hover{
+  cursor: pointer;
+}
+.card{
+  width: 225px;
+}
 
 
 .App {
@@ -7,7 +45,7 @@
   justify-content: center;
   height: 100vh;
   background-color: #ffff00;
-  /* cursor: none  !important; */
+  cursor: none  !important;
 }
 
 .title {
@@ -29,7 +67,9 @@
   background-color: black;
   color: white;
   width: 100vw;
-  height: 100vh;
+  height: 1250px;
+  left: auto;
+  right: auto;
 }
 
 .bts{

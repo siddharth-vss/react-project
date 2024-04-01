@@ -1,8 +1,98 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react'
+import '../App.css'
+import a from './image/bz1.png';
+import b from './image/bz2.png';
+import c from './image/bz4.png';
+import d from './image/one.png';
+import e from './image/samsung.png';
+import f from './image/so.png';
+import g from './image/so1.png';
+import h from './image/so2.png';
+import i from './image/so3.png';
+import j from './image/wa1.png';
+import k from './image/wa2.png';
+import l from './image/wa3.png';
+
 
 const short = () => {
-  
+
+  const products = [
+    {
+      id: 7,
+      img: g,
+      name: 'SHOES',
+      price: 2500
+    },
+    {
+      id: 2,
+      img: b,
+      name: 'BLEZER',
+      price: 550,
+    },
+    {
+      id: 5,
+      img: e,
+      name: 'SAMSUNG',
+      price: 15000
+    },
+    {
+      id: 3,
+      name: 'BLEZER',
+      img: c,
+      price: 600
+    },
+    {
+      id: 6,
+      img: f,
+      name: 'SHOES',
+      price: 3000
+    },
+    {
+      id: 12,
+      name: 'WATCH',
+      img: l,
+      price: 512
+    },
+    {
+      id: 8,
+      img: h,
+      name: 'SHOES',
+      price: 900
+    },
+    {
+      id: 4,
+      img: d,
+      name: '1+',
+      price: 5000
+    },
+    {
+      id: 9,
+      name: 'SHOES',
+      img: i,
+      price: 4000
+    },
+    {
+      id: 10,
+      img: j,
+      name: 'WATCH',
+      price: 450
+    },
+    {
+      id: 1,
+      img: a,
+      name: 'BLEZER',
+      price: 500
+    },
+    {
+      id: 11,
+      img: k,
+      name: 'WATCH',
+      price: 150
+    },
+  ]
+
+
   const States = [
     { name: "Andhra Pradesh", value: "Andhra Pradesh" ,id:75     },
     { name: "Arunachal Pradesh", value: "Arunachal Pradesh" ,id:  55   },
@@ -41,6 +131,7 @@ const short = () => {
   
   const[ short,setShort ] = useState("lowest");
   const[ data,setData ] = useState(States.sort( (a,b) => a.id > b.id ?  1: -1 ));
+  const[ image,setImage ] = useState(products);
   
 
  
@@ -59,25 +150,32 @@ const short = () => {
     case "lowest":
       setShort("lowest");
       setData(States.sort( (a,b) => a.id > b.id ?  1: -1 ) );
+      setImage(products.sort( (a,b) => a.price > b.price ?  1: -1 ) );
       console.log(data);
     break;
     case "highest":
       setShort("highest");
       setData(States.sort( (a,b)=> a.id > b.id ?  -1 : 1 ));
+      setImage(products.sort( (a,b)=> a.price > b.price ?  -1 : 1 ));
       console.log(data);
     break;
     case "a-z":
       setShort("a-z");
       setData(States.sort( (a,b)=> a.name > b.name ?  1 : -1 ));
+      setImage(products.sort( (a,b)=> a.name > b.name ?  1 : -1 ));
       console.log(data);
     break;
     case "z-a":
       setShort("z-a");
       setData(States.sort( (a,b)=> a.name < b.name ?  1 : -1 ));
+      setImage(products.sort( (a,b)=> a.name < b.name ?  1 : -1 ));
       console.log(data);
     break;
     default:
-      setShort("ayo");
+      setShort("z-a");
+      setData(States.sort( (a,b)=> a.name < b.name ?  1 : -1 ));
+      setImage(products.sort( (a,b)=> a.name < b.name ?  1 : -1 ));
+      console.log(data);
       break;
    }
   }
@@ -110,6 +208,23 @@ const short = () => {
       {data.map( (e) =>{
         return <li key={e.value} >{e.name}  {e.id}</li>
       } )}
+    <div className='spa'>
+      {image.map( (product) => {
+        return (
+          <div    >
+          <div className="card" key={product.id} >
+            <img src={product.img} className="card-img" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">{product.name}</h5>
+              <p className="card-text">₹{product.price} </p>
+
+            </div>
+          </div>
+
+        </div>
+        )
+      } )}
+      </div>
  </div>
      
 
